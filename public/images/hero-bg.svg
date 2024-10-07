@@ -1,0 +1,29 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <filter id="roughpaper">
+      <feTurbulence type="fractalNoise" baseFrequency="500" numOctaves="10" result="noise" />
+      <feDiffuseLighting lightingColor="white" diffuseConstant="1" surfaceScale="0.7" result="diffLight">
+        <feDistantLight azimuth="100" elevation="55" />
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="grey" />
+  <rect filter="url(#roughpaper)" width="100%" height="100%" fill="transparent" />
+</svg> -->
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<defs>
+
+<filter id="roughpaper">
+      <feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" result="noise"/>
+      <feDiffuseLighting lighting-color="white" diffuseConstant="1" surfaceScale=".1" result="diffLight">
+        <feDistantLight azimuth="0" elevation="50"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="grey" />
+  <rect filter="url(#roughpaper)" width="100%" height="100%" fill="transparent" />
+</svg>
+
+
